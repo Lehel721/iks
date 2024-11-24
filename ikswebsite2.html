@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKS Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #f7f4d9;
+            padding: 10px 0;
+        }
+        .navbar button {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .main-content {
+            background-color: #5e926b;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-content img {
+            width: 120px;
+            height: auto;
+            margin: 10px;
+        }
+        .shop-now-container {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .shop-now-container button {
+            background-color: #d4e6c5;
+            border: none;
+            padding: 15px 25px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: #f7f4d9;
+            padding: 80px 0;
+        }
+        .section {
+            text-align: center;
+            width: 30%;
+        }
+        .section img {
+            width: 250px;
+            height: auto;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <button onclick="navigate('products.html')">KITCHEN PRODUCTS</button>
+        <button onclick="navigate('products.html')">HOME DECOR</button>
+        <button onclick="navigate('products.html')">POTTERY</button>
+        <button onclick="navigate('products.html')">WARLI ART</button>
+        <button onclick="navigate('products.html')">TRADITIONAL CLOTHES</button>
+        <button onclick="navigate('products.html')">JEWELLERY</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <img src="pottery1.jpg" alt="Pottery">
+        <img src="warli.jpg" alt="Warli Art">
+        <div class="shop-now-container">
+            <button onclick="navigate('shop.html')">SHOP NOW</button>
+        </div>
+        <img src="madhubani.jpg" alt="Madhubani Art">
+        <img src="jewellery.jpg" alt="Jewellery">
+        <img src="decor.jpg" alt="Decor">
+        <img src="pottery2.jpg" alt="Terracotta Pottery">
+    </div>
+
+    <!-- Bottom Sections -->
+    <div class="sections">
+        <div class="section">
+            <h3>BEST SELLING</h3>
+            <img src="toda.jpg" alt="Toda Embroidery">
+        </div>
+        <div class="section">
+            <h3>BAMBOO MADE</h3>
+            <img src="bamboo.jpg" alt="Bamboo Products">
+        </div>
+        <div class="section">
+            <h3>MOST POPULAR</h3>
+            <img src="pot.jpg" alt="Terracotta Pot">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function navigate(url) {
+            window.location.href = url; // Redirects to the given URL
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
